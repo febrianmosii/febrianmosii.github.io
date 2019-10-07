@@ -41,7 +41,9 @@
   /* Microsoft Edge */
   color: #777777;
   font-weight: 300; }
-
+html {
+  scroll-behavior: smooth;
+}
 body {
   color: #777777;
   font-family: "Roboto", sans-serif;
@@ -2117,7 +2119,9 @@ body.mobile-nav-active #mobile-nav-toggle {
   background: #90acd1; }
 
 .banner-content {
-  text-align: left; }
+  text-align: left;
+  margin-top: 60px;
+   }
   .banner-content h1 {
     font-size: 60px;
     font-weight: 700;
@@ -2185,7 +2189,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 .brand-wrap {
   background: #fff;
-  margin-top: -75px;
+  margin-top: -45px;
   border-radius: 100px;
   padding: 64px 14px;
   position: relative;
