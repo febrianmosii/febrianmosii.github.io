@@ -2151,8 +2151,13 @@ body.mobile-nav-active #mobile-nav-toggle {
       border-left: 26px solid transparent;
       border-right: 0px solid transparent;
       border-top: 24px solid #90acd1; }
+    .img-fluid.mfm {
+      width: 265px !important;
+      height: auto;
+      margin-right: 300px;
+    }
   .banner-content .designation {
-    max-width: 390px;
+    max-width: 500px;
     font-size: 30px;
     font-weight: 400;
     line-height: 42px; }
@@ -2167,7 +2172,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 .banner-img {
   text-align: right;
   position: relative;
-  left: 160px; }
+  left: 140px; }
   @media (max-width: 1480px) {
     .banner-img {
       left: 0px; } }
