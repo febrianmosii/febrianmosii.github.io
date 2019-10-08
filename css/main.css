@@ -1231,6 +1231,7 @@ h1, h2, h3, h4, h5, h6 {
   .progress-table-wrap {
     overflow-x: scroll; } }
 
+
 .progress-table {
   background: #f9f9ff;
   padding: 15px 0px 30px 0px;
@@ -2134,6 +2135,11 @@ body.mobile-nav-active #mobile-nav-toggle {
     @media (max-width: 576px) {
       .banner-content h1 {
         font-size: 35px; } }
+      @media (max-width: 299px) {
+        .banner-wrap {
+          margin-top: 80px;
+        }
+      }
     @media (max-width: 325px) {
       .banner-content h1 {
         font-size: 32px; } }
@@ -2198,8 +2204,9 @@ body.mobile-nav-active #mobile-nav-toggle {
   border: 1px solid rgba(214, 214, 214, 0.11); }
   @media (max-width: 991px) {
     .brand-wrap {
-      padding: 40px 0;
-      margin-top: -52px; } }
+        padding: 40px 0;
+        margin-top: 25px;
+    } }
   .brand-wrap .owl-carousel .owl-item img {
     width: auto !important; }
   .brand-wrap .single-brand {
