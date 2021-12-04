@@ -1200,3 +1200,7 @@ section {
 .img-pdf:hover {
   opacity: 1;
 }
+
+td {
+  text-align: left !important;
+}

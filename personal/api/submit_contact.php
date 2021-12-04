@@ -22,11 +22,19 @@
         $item = new Contact($db);
         
         $data = $_POST;
-    
-        $item->fullname = filter_var($data['fullname'], FILTER_SANITIZE_STRING);
-        $item->email    = filter_var($data['email'], FILTER_SANITIZE_STRING);
-        $item->subject  = filter_var($data['subject'], FILTER_SANITIZE_STRING);
-        $item->message  = filter_var($data['message'], FILTER_SANITIZE_STRING);
+
+        $ip = getenv('HTTP_CLIENT_IP')?:
+        getenv('HTTP_X_FORWARDED_FOR')?:
+        getenv('HTTP_X_FORWARDED')?:
+        getenv('HTTP_FORWARDED_FOR')?:
+        getenv('HTTP_FORWARDED')?:
+        getenv('REMOTE_ADDR');
+
+        $item->fullname   = filter_var($data['fullname'], FILTER_SANITIZE_STRING);
+        $item->email      = filter_var($data['email'], FILTER_SANITIZE_STRING);
+        $item->subject    = filter_var($data['subject'], FILTER_SANITIZE_STRING);
+        $item->message    = filter_var($data['message'], FILTER_SANITIZE_STRING);
+        $item->ip_address = $ip;
         
         try {
             $item->createContact();
